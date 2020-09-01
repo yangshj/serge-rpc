@@ -128,7 +128,7 @@ public class RpcFuture implements Future<Object> {
     static class Sync extends AbstractQueuedSynchronizer {
         private static final long serialVersionUID = 1L;
 
-        //future status
+        //1表示完成，0表示等待
         private final int done = 1;
         private final int pending = 0;
 
