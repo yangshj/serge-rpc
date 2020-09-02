@@ -9,7 +9,7 @@ public class RpcServerBootstrap2 {
     private static final Logger logger = LoggerFactory.getLogger(RpcServerBootstrap2.class);
 
     public static void main(String[] args) {
-        String serverAddress = "127.0.0.1:18866";
+        String serverAddress = "127.0.0.1:18877";
         String registryAddress = "10.104.104.248:5181,10.104.108.93:5181,10.104.108.98:5181";
         RpcServer rpcServer = new RpcServer(serverAddress, registryAddress);
         HelloService helloService1 = new HelloServiceImpl();
